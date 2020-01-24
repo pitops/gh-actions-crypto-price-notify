@@ -12,7 +12,6 @@ const CRYPTOCURRENCIES = ['XRP']
 const slack = new Slack()
 slack.setWebhook(`https://hooks.slack.com/services/${slackWebhookSecret}`)
 
-// Promisify the slack webhook method
 const slackWebhook = util.promisify(slack.webhook)
 
 const postToSlack = async message => {
