@@ -7,7 +7,7 @@ const util = require('util')
 const slackWebhookSecret = process.env.SLACK_WEBHOOK_SECRET
 const coinMarketCapAPIKey = process.env.COINMARKETCAP_API_KEY
 
-const CRYPTOCURRENCIES = ['XRP']
+const CRYPTOCURRENCIES = []
 
 const slack = new Slack()
 slack.setWebhook(`https://hooks.slack.com/services/${slackWebhookSecret}`)
